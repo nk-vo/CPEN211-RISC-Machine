@@ -8,7 +8,7 @@ module lab3_top(SW,KEY,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,LEDR);
   // Partner 1 ID: 77305464 - last 6: 305464
   always @(negedge KEY[0]) begin
     if (~KEY[3]) begin
-      
+      HEX0 = 0;
     end
   end
 endmodule
