@@ -58,12 +58,20 @@ module lab3_top_tb;
     end
 
     initial begin
-        KEY[3] = 0;
+        KEY[3] = 1'b0;
         SW[3:0] = 4'b0000;
         err = 1'b0;
-
+        #10;
         if (HEX0 !== 7'bx_xxx_xxx) begin
             $display("ERROR ** output is %b, expected %b", HEX0, 7'bx_xxx_xxx);
+            err = 1'b1;
+        end
+
+        KEY[3] = 1'b1;  // release reset
+        $display("checking S1->S2");
+        SW[3:0] = `b3;
+        if (HEX0 !== `h3) begin
+            $display("ERROR ** output is %b, expected %b", HEX0, `h3);
             err = 1'b1;
         end
     end
