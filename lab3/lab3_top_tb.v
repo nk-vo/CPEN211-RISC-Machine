@@ -74,5 +74,8 @@ module lab3_top_tb;
             $display("ERROR ** output is %b, expected %b", HEX0, `h3);
             err = 1'b1;
         end
+
+        if (~err) $display("PASSED");
+        $stop;
     end
 endmodule

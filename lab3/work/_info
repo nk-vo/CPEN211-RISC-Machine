@@ -9,7 +9,7 @@ z2
 cModel Technology
 dD:/CPEN211/IntelQuartus/modelsim_ase/win32aloem
 vlab3_top
-Z0 !s110 1634974341
+Z0 !s110 1635042141
 !i10b 1
 !s100 lJkfIV^`^FX>_[a6F3JMJ2
 I84K52K=9@T4HaRj4]J84n0
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1634974341.000000
+Z4 !s108 1635042141.000000
 !s107 D:\CPEN211 new\lab3\lab3_top.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:\CPEN211 new\lab3\lab3_top.v|
 !i113 1
@@ -32,21 +32,21 @@ Z6 tCvgOpt 0
 vlab3_top_tb
 R0
 !i10b 1
-!s100 HM[z_1EbG=Tk=d<L<Z^KC3
-ILLlmHLgEo:g]7m32nMGLd3
+!s100 EZR>7An2^5Aje7g`b>E8c2
+I`gR<g8kF`6@dUPc8l5cZV2
 R1
 R2
-w1634974334
-8D:/CPEN211 new/lab3/lab3_tb.v
-FD:/CPEN211 new/lab3/lab3_tb.v
+w1635042106
+8D:/CPEN211 new/lab3/lab3_top_tb.v
+FD:/CPEN211 new/lab3/lab3_top_tb.v
 L0 43
 R3
 r1
 !s85 0
 31
 R4
-!s107 D:/CPEN211 new/lab3/lab3_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211 new/lab3/lab3_tb.v|
+!s107 D:/CPEN211 new/lab3/lab3_top_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211 new/lab3/lab3_top_tb.v|
 !i113 1
 R5
 R6
