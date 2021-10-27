@@ -132,6 +132,11 @@ module lab3_top_tb;
         SW[3:0] = `b3; #10; SW[3:0] = `b2; #10;
         my_checker_invalid(`invalid_2);
         
+        KEY[3] = 1'b0; #10; KEY[3] = 1'b1;
+        $display("checking valid_3->invalid_3");
+        SW[3:0] = `b3; #10; SW[3:0] = `b0; #10; SW[3:0] = `b2; #10;
+        my_checker_invalid(`invalid_3);
+
         if (~err) $display("PASSED");
         else $display("FAILED");
         $stop;
