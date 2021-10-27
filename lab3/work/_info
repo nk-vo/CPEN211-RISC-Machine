@@ -8,45 +8,111 @@ z2
 !i10f 100
 cModel Technology
 dD:/CPEN211/IntelQuartus/modelsim_ase/win32aloem
-vlab3_top
-Z0 !s110 1635134648
+vDec
+!s110 1635306378
 !i10b 1
-!s100 A=:@=FjP[HPoJEai6fz=f3
-I3[i:b:R33Gg=5]5jPgQCK0
-Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dD:/CPEN211 new/lab3
-w1635134468
-8D:\CPEN211 new\lab3\lab3_top.v
-FD:\CPEN211 new\lab3\lab3_top.v
-L0 42
-Z3 OV;L;10.5b;63
+!s100 Wl82YjT1h1J3kLe0z3=UO3
+IiCz9>zo3]RCY777jjXoXO2
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dD:/CPEN211 new/lab3
+w1635306307
+Z2 8D:/CPEN211 new/lab3/lab3_top.v
+Z3 FD:/CPEN211 new/lab3/lab3_top.v
+L0 117
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1635134645.000000
-!s107 D:\CPEN211 new\lab3\lab3_top.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:\CPEN211 new\lab3\lab3_top.v|
+!s108 1635306375.000000
+Z5 !s107 D:/CPEN211 new/lab3/lab3_top.v|
+Z6 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211 new/lab3/lab3_top.v|
 !i113 1
-Z4 o-work work
-Z5 tCvgOpt 0
-vlab3_top_tb
-R0
+Z7 o-work work
+Z8 tCvgOpt 0
+n@dec
+vFSM
+!s110 1635319832
 !i10b 1
-!s100 ioZ`LN::Xa0aLFQQilVJ42
-IfRJzX`_PKe=1U^;[928kU0
+!s100 ib_Aan1Ka^239dz8XK>hU2
+I^NO7f=02gRn?FFP52lU`]3
+R0
 R1
+w1635319828
 R2
-w1635134621
+R3
+L0 74
+R4
+r1
+!s85 0
+31
+!s108 1635319831.000000
+R5
+R6
+!i113 1
+R7
+R8
+n@f@s@m
+vlab3_top
+Z9 !s110 1635320705
+!i10b 1
+!s100 9fcon2i:cj4n6NzzdHHE>1
+I??:hM9n1VF6`8:e>^5fJX1
+R0
+R1
+Z10 w1635320640
+R2
+R3
+L0 47
+R4
+r1
+!s85 0
+31
+Z11 !s108 1635320705.000000
+R5
+R6
+!i113 1
+R7
+R8
+vlab3_top_tb
+R9
+!i10b 1
+!s100 MYneVZn3@ZUYnNZQ]omiV0
+I>:oW]87Q1@;dA3GTzzL<61
+R0
+R1
+w1635320700
 8D:/CPEN211 new/lab3/lab3_top_tb.v
 FD:/CPEN211 new/lab3/lab3_top_tb.v
-L0 43
-R3
+L0 46
+R4
 r1
 !s85 0
 31
-!s108 1635134648.000000
+R11
 !s107 D:/CPEN211 new/lab3/lab3_top_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211 new/lab3/lab3_top_tb.v|
 !i113 1
+R7
+R8
+vvDFF
+R9
+!i10b 1
+!s100 LI<3M0JjSo=:CWg]X425L1
+IT]KZ7A^PbA9;Y1eNJU=020
+R0
+R1
+R10
+R2
+R3
+L0 91
 R4
+r1
+!s85 0
+31
+R11
 R5
+R6
+!i113 1
+R7
+R8
+nv@d@f@f
