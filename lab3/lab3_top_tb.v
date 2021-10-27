@@ -28,6 +28,7 @@
 `define error     4'b1101   // error
 
 // HEXCODE 0-9
+`define hx      7'bx_xxx_xxx
 `define h0      7'b1_000_000
 `define h1      7'b0_000_110
 `define h2      7'b0_100_100
@@ -52,7 +53,7 @@ module lab3_top_tb;
 
     lab3_top dut(SW, KEY, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, LEDR);
 
-    task my_checker;
+    task my_checker_valid;
         input [4:0] expected_state;
         input [6:0] expected_hex0;
     begin
@@ -66,7 +67,15 @@ module lab3_top_tb;
         end
     end
     endtask
-    
+    task my_checker_invalid;
+        input [4:0] expected_state;
+    begin
+        if (lab3_top_tb.dut.present_state !== expected_state) begin
+            $display("ERROR ** state is %b, expected %b", lab3_top_tb.dut.present_state, expected_state);
+            err = 1'b1;
+        end
+    end
+    endtask
     initial begin
         KEY[0] = 1; #5;
         forever begin
@@ -78,28 +87,28 @@ module lab3_top_tb;
     initial begin
         $display("checking reset");
         KEY[3] = 1'b0; err = 1'b0; #10;
-        my_checker(`valid_1, `h3);
+        my_checker_valid(`valid_1, `h3);
         KEY[3] = 1'b1;  // release reset
 
         $display("checking valid_1->valid_2");
         SW[3:0] = `b3; #10;
-        my_checker(`valid_2, `h0);
+        my_checker_valid(`valid_2, `h0);
         
         $display("chekcing valid_2->valid_3");
         SW[3:0] = `b0; #10;
-        my_checker(`valid_3, `h5);
+        my_checker_valid(`valid_3, `h5);
         
         $display("checking valid_3->valid_4");
         SW[3:0] = `b5; #10;
-        my_checker(`valid_4, `h5);
+        my_checker_valid(`valid_4, `h4);
         
         $display("checking valid_4->valid_5");
         SW[3:0] = `b4; #10;
-        my_checker(`valid_5, `h6);
+        my_checker_valid(`valid_5, `h6);
 
         $display("checking valid_5->valid_6");
         SW[3:0] = `b6; #10;
-        my_checker(`valid_6, `h4);
+        my_checker_valid(`valid_6, `h4);
         
         $display("checking valid_6->open");
         SW[3:0] = `b4; #10;
@@ -112,10 +121,17 @@ module lab3_top_tb;
             err = 1'b1;
         end
         
-        $display("chekcing valid_2->invalid_3");
-        SW[3:0] = `b0; #10;
-        my_checker(`invalid_2, 7'bx);
+        KEY[3] = 1'b0; #10; 
+        {dut.HEX5,dut.HEX4,dut.HEX3,dut.HEX2,dut.HEX1,dut.HEX0} = {6{`hx}}; KEY[3] = 1'b1;
+        $display("checking valid_1->invalid_1");
+        SW[3:0] = `b1; #10;
+        my_checker_invalid(`invalid_1);
 
+        KEY[3] = 1'b0; #10; KEY[3] = 1'b1;
+        $display("checking valid_2->invalid_2");
+        SW[3:0] = `b3; #10; SW[3:0] = `b2; #10;
+        my_checker_invalid(`invalid_2);
+        
         if (~err) $display("PASSED");
         else $display("FAILED");
         $stop;

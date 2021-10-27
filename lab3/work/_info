@@ -53,21 +53,21 @@ R7
 R8
 n@f@s@m
 vlab3_top
-Z9 !s110 1635323093
+Z9 !s110 1635325451
 !i10b 1
 !s100 XZ=Xe3A5`U3mb29G9ePdM0
 I7RLzeHodc96UIQ_6Y8W^z0
 R0
 R1
-Z10 w1635321964
+Z10 w1635324878
 R2
 R3
-L0 47
+Z11 L0 47
 R4
 r1
 !s85 0
 31
-Z11 !s108 1635323093.000000
+Z12 !s108 1635325451.000000
 R5
 R6
 !i113 1
@@ -76,19 +76,19 @@ R8
 vlab3_top_tb
 R9
 !i10b 1
-!s100 8DbKAgX9gLEcma5HDchc80
-Ij]YgnCU0F<E1YdKL49ebM2
+!s100 o9n[aTB2Ye:G56oP<D;[f2
+IfOzkZcCW?E03Ucc:@PLB=0
 R0
 R1
-w1635323090
+w1635325448
 8D:/CPEN211 new/lab3/lab3_top_tb.v
 FD:/CPEN211 new/lab3/lab3_top_tb.v
-L0 46
+R11
 R4
 r1
 !s85 0
 31
-R11
+R12
 !s107 D:/CPEN211 new/lab3/lab3_top_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211 new/lab3/lab3_top_tb.v|
 !i113 1
@@ -109,7 +109,7 @@ R4
 r1
 !s85 0
 31
-R11
+R12
 R5
 R6
 !i113 1
