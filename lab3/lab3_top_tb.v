@@ -66,7 +66,7 @@ module lab3_top_tb;
         end
     end
     endtask
-
+    
     initial begin
         KEY[0] = 1; #5;
         forever begin
@@ -81,46 +81,40 @@ module lab3_top_tb;
         my_checker(`valid_1, `h3);
         KEY[3] = 1'b1;  // release reset
 
-        $display("checking S1->S2");
+        $display("checking valid_1->valid_2");
         SW[3:0] = `b3; #10;
         my_checker(`valid_2, `h0);
-
-        $display("chekcing S2->S3");
+        
+        $display("chekcing valid_2->valid_3");
         SW[3:0] = `b0; #10;
         my_checker(`valid_3, `h5);
         
+        $display("checking valid_3->valid_4");
+        SW[3:0] = `b5; #10;
+        my_checker(`valid_4, `h5);
+        
+        $display("checking valid_4->valid_5");
+        SW[3:0] = `b4; #10;
+        my_checker(`valid_5, `h6);
 
-        $display("chekcing S3->S4");
-        SW[3:0] = `b5;
-        if (HEX0 !== `h5) begin
-            $display("ERROR ** output is %b, expected %b", HEX0, `h5);
+        $display("checking valid_5->valid_6");
+        SW[3:0] = `b6; #10;
+        my_checker(`valid_6, `h4);
+        
+        $display("checking valid_6->open");
+        SW[3:0] = `b4; #10;
+        if (dut.present_state !== `open) begin
+            $display("ERROR ** state is %b, expected %b", dut.present_state, `open);
             err = 1'b1;
         end
-        #10;
-
-        $display("chekcing S4->S5");
-        SW[3:0] = `b4;
-        if (HEX0 !== `h4) begin
-            $display("ERROR ** output is %b, expected %b", HEX0, `h4);
+        if ({HEX3,HEX2,HEX1,HEX0} !== `OPEn) begin
+            $display("ERROR ** HEX0 is %b, expected %b", {HEX3,HEX2,HEX1,HEX0}, `OPEn);
             err = 1'b1;
         end
-        #10;
-
-        $display("chekcing S5->S6");
-        SW[3:0] = `b6;
-        if (HEX0 !== `h0) begin
-            $display("ERROR ** output is %b, expected %b", HEX0, `h6);
-            err = 1'b1;
-        end
-        #10;
-
-        $display("chekcing S2->S3");
-        SW[3:0] = `b4;
-        if (HEX0 !== `h4) begin
-            $display("ERROR ** output is %b, expected %b", HEX0, `h4);
-            err = 1'b1;
-        end
-        #10;
+        
+        $display("chekcing valid_2->invalid_3");
+        SW[3:0] = `b0; #10;
+        my_checker(`invalid_2, 7'bx);
 
         if (~err) $display("PASSED");
         else $display("FAILED");

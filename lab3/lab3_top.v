@@ -63,12 +63,12 @@ module lab3_top(SW,KEY,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,LEDR);
     if (SW[3:0] < `b0 | SW[3:0] > `b9)  {HEX4,HEX3,HEX2,HEX1,HEX0} = `ErrOr;
     else begin
       case (present_state)
-        `valid_1:   {next_state, HEX0} = {(SW[3:0] == `b3) ? `valid_2 : `invalid_1, `b3};
-        `valid_2:   {next_state, HEX0} = {(SW[3:0] == `b0) ? `valid_3 : `invalid_2, `b0};
-        `valid_3:   {next_state, HEX0} = {(SW[3:0] == `b5) ? `valid_4 : `invalid_3, `b5};
-        `valid_4:   {next_state, HEX0} = {(SW[3:0] == `b4) ? `valid_5 : `invalid_4, `b4};
-        `valid_5:   {next_state, HEX0} = {(SW[3:0] == `b6) ? `valid_6 : `invalid_5, `b6};
-        `valid_6:   {next_state, HEX0} = {(SW[3:0] == `b4) ? `open    : `close,     `b4};
+        `valid_1:   {next_state, HEX0} = {(SW[3:0] == `b3) ? `valid_2 : `invalid_1, `h3};
+        `valid_2:   {next_state, HEX0} = {(SW[3:0] == `b0) ? `valid_3 : `invalid_2, `h0};
+        `valid_3:   {next_state, HEX0} = {(SW[3:0] == `b5) ? `valid_4 : `invalid_3, `h5};
+        `valid_4:   {next_state, HEX0} = {(SW[3:0] == `b4) ? `valid_5 : `invalid_4, `h4};
+        `valid_5:   {next_state, HEX0} = {(SW[3:0] == `b6) ? `valid_6 : `invalid_5, `h6};
+        `valid_6:   {next_state, HEX0} = {(SW[3:0] == `b4) ? `open    : `close,     `h4};
         `invalid_1: next_state = `invalid_2;
         `invalid_2: next_state = `invalid_3;
         `invalid_3: next_state = `invalid_4;
