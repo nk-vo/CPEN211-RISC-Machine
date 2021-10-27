@@ -108,7 +108,9 @@ module lab3_top(SW,KEY,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,LEDR);
       {`base,`open}:  {HEX3,HEX2,HEX1,HEX0} = `OPEn;
       default: {HEX0, HEX1, HEX2, HEX3, HEX4, HEX5} ={6{7'bx}};
     endcase
-    
-    
   end
+endmodule
+
+module Dec();
+  
 endmodule

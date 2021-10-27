@@ -74,7 +74,48 @@ module lab3_top_tb;
             $display("ERROR ** output is %b, expected %b", HEX0, `h3);
             err = 1'b1;
         end
+        #10;
 
+        $display("chekcing S2->S3");
+        SW[3:0] = `b0;
+        if (HEX0 !== `h0) begin
+            $display("ERROR ** output is %b, expected %b", HEX0, `h0);
+            err = 1'b1;
+        end
+        #10;
+
+        $display("chekcing S2->S3");
+        SW[3:0] = `b5;
+        if (HEX0 !== `h5) begin
+            $display("ERROR ** output is %b, expected %b", HEX0, `h5);
+            err = 1'b1;
+        end
+        #10;
+
+        $display("chekcing S2->S3");
+        SW[3:0] = `b4;
+        if (HEX0 !== `h4) begin
+            $display("ERROR ** output is %b, expected %b", HEX0, `h4);
+            err = 1'b1;
+        end
+        #10;
+
+        $display("chekcing S2->S3");
+        SW[3:0] = `b6;
+        if (HEX0 !== `h0) begin
+            $display("ERROR ** output is %b, expected %b", HEX0, `h6);
+            err = 1'b1;
+        end
+        #10;
+
+        $display("chekcing S2->S3");
+        SW[3:0] = `b4;
+        if (HEX0 !== `h4) begin
+            $display("ERROR ** output is %b, expected %b", HEX0, `h4);
+            err = 1'b1;
+        end
+        #10;
+        
         if (~err) $display("PASSED");
         $stop;
     end
