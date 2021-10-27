@@ -57,8 +57,6 @@ module lab3_top(SW,KEY,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,LEDR);
   vDFF #(4) vdff_1(~KEY[0], next_state_reset, present_state);
   assign next_state_reset = ~KEY[3] ? `valid_1 : next_state;
 
-  //Dec dec(SW,next_state,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5); 
-  
   always @(*) begin
     if (SW[3:0] < `b0 | SW[3:0] > `b9)  {HEX4,HEX3,HEX2,HEX1,HEX0} = `ErrOr;
     else begin
@@ -97,19 +95,3 @@ module vDFF(clk, in, out);
     out <= in;
   end
 endmodule
-
-/*module Dec(SW,next_state,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
-  
-  case ({SW[3:0],present_state})
-      {4'bx,`valid_1}:HEX0 = `h3;
-      {`b3,`valid_2}: HEX0 = `h3;
-      {`b0,`valid_2}: HEX0 = `h0;
-      {`b5,`valid_3}: HEX0 = `h5;
-      {`b4,`valid_4}: HEX0 = `h4;
-      {`b5,`valid_5}: HEX0 = `h6;
-      {`b4,`valid_6}: HEX0 = `h4;
-      {`base,`close}: {HEX5,HEX4,HEX3,HEX2,HEX1,HEX0} = `CLOSEd;
-      {`base,`open}:  {HEX3,HEX2,HEX1,HEX0} = `OPEn;
-      default: {HEX0, HEX1, HEX2, HEX3, HEX4, HEX5} ={6{7'bx}};
-    endcase
-endmodule*/

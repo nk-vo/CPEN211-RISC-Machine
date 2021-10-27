@@ -137,6 +137,37 @@ module lab3_top_tb;
         SW[3:0] = `b3; #10; SW[3:0] = `b0; #10; SW[3:0] = `b2; #10;
         my_checker_invalid(`invalid_3);
 
+        KEY[3] = 1'b0; #10; KEY[3] = 1'b1;
+        $display("checking valid_4->invalid_4");
+        SW[3:0] = `b3; #10; SW[3:0] = `b0; #10; SW[3:0] = `b5; #10;
+        SW[3:0] = `b2; #10;
+        my_checker_invalid(`invalid_4);
+
+        KEY[3] = 1'b0; #10; KEY[3] = 1'b1;
+        $display("checking valid_5->invalid_5");
+        SW[3:0] = `b3; #10; SW[3:0] = `b0; #10; SW[3:0] = `b5; #10;
+        SW[3:0] = `b4; #10; SW[3:0] = `b2; #10;
+        my_checker_invalid(`invalid_5);
+
+        KEY[3] = 1'b0; #10; KEY[3] = 1'b1;
+        $display("checking valid_6->close");
+        SW[3:0] = `b3; #10; SW[3:0] = `b0; #10; SW[3:0] = `b5; #10;
+        SW[3:0] = `b4; #10; SW[3:0] = `b6; #10; SW[3:0] = `b2; #10;
+        my_checker_invalid(`close);
+        if ({HEX5,HEX4,HEX3,HEX2,HEX1,HEX0} !== `CLOSEd) begin
+            $display("ERROR ** HEX0 is %b, expected %b", {HEX5,HEX4,HEX3,HEX2,HEX1,HEX0}, `CLOSEd);
+            err = 1'b1;
+        end
+
+        KEY[3] = 1'b0; #10;
+        {dut.HEX5,dut.HEX4,dut.HEX3,dut.HEX2,dut.HEX1,dut.HEX0} = {6{`hx}}; KEY[3] = 1'b1;
+        $display("checking error");
+        SW[3:0] = 4'b1111; #10;
+        if ({HEX4,HEX3,HEX2,HEX1,HEX0} !== `ErrOr) begin
+            $display("ERROR ** HEX0 is %b, expected %b", {HEX4,HEX3,HEX2,HEX1,HEX0}, `ErrOr);
+            err = 1'b1;
+        end
+
         if (~err) $display("PASSED");
         else $display("FAILED");
         $stop;
