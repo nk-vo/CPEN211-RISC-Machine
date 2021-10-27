@@ -168,6 +168,17 @@ module lab3_top_tb;
             err = 1'b1;
         end
 
+        KEY[3] = 1'b0; #10; 
+        {dut.HEX5,dut.HEX4,dut.HEX3,dut.HEX2,dut.HEX1,dut.HEX0} = {6{`hx}}; KEY[3] = 1'b1;
+        $display("checking invalid_1->close");
+        SW[3:0] = `b1; #10; SW[3:0] = `b0; #10; SW[3:0] = `b5; #10;
+        SW[3:0] = `b4; #10; SW[3:0] = `b6; #10; SW[3:0] = `b2; #10;
+        my_checker_invalid(`close);
+        if ({HEX5,HEX4,HEX3,HEX2,HEX1,HEX0} !== `CLOSEd) begin
+            $display("ERROR ** HEX0 is %b, expected %b", {HEX5,HEX4,HEX3,HEX2,HEX1,HEX0}, `CLOSEd);
+            err = 1'b1;
+        end
+
         if (~err) $display("PASSED");
         else $display("FAILED");
         $stop;
