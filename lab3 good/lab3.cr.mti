@@ -1,0 +1,29 @@
+{D:/CPEN211 new/lab3 good/decoder.v} {1 {vlog -work work -stats=none {D:/CPEN211 new/lab3 good/decoder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module decoder
+
+Top level modules:
+	decoder
+
+} {} {}} {D:/CPEN211 new/lab3 good/fsmNew.v} {1 {vlog -work work -stats=none {D:/CPEN211 new/lab3 good/fsmNew.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fsmNew
+
+Top level modules:
+	fsmNew
+
+} {} {}} {D:/CPEN211 new/lab3 good/lab3_top.v} {1 {vlog -work work -stats=none {D:/CPEN211 new/lab3 good/lab3_top.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab3_top
+
+Top level modules:
+	lab3_top
+
+} {} {}} {D:/CPEN211 new/lab3 good/lab3_top_tb.v} {1 {vlog -work work -stats=none {D:/CPEN211 new/lab3 good/lab3_top_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab3_top_tb
+
+Top level modules:
+	lab3_top_tb
+
+} {} {}}

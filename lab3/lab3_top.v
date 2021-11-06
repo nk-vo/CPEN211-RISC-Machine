@@ -30,6 +30,7 @@
 
 
 // HEXCODE 0-9
+`define h_blank 7'b1_111_111
 `define h0      7'b1_000_000
 `define h1      7'b0_000_110
 `define h2      7'b0_100_100
@@ -51,9 +52,9 @@ module lab3_top(SW,KEY,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,LEDR);
   output [9:0] LEDR; // optional: use these outputs for debugging on your DE1-SoC
 
   // put your solution code here!
-  reg [3:0]  next_state;
+  reg [3:0]  next_state, state;
   wire [3:0] present_state, next_state_reset;
-
+  
   vDFF #(4) vdff_1(~KEY[0], next_state_reset, present_state);
   assign next_state_reset = ~KEY[3] ? `valid_1 : next_state;
 
@@ -61,28 +62,43 @@ module lab3_top(SW,KEY,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,LEDR);
     if (SW[3:0] < `b0 | SW[3:0] > `b9)  {HEX4,HEX3,HEX2,HEX1,HEX0} = `ErrOr;
     else begin
       case (present_state)
-        `valid_1:   {next_state, HEX0} = {(SW[3:0] == `b3) ? `valid_2 : `invalid_1, `h3};
-        `valid_2:   {next_state, HEX0} = {(SW[3:0] == `b0) ? `valid_3 : `invalid_2, `h0};
-        `valid_3:   {next_state, HEX0} = {(SW[3:0] == `b5) ? `valid_4 : `invalid_3, `h5};
-        `valid_4:   {next_state, HEX0} = {(SW[3:0] == `b4) ? `valid_5 : `invalid_4, `h4};
-        `valid_5:   {next_state, HEX0} = {(SW[3:0] == `b6) ? `valid_6 : `invalid_5, `h6};
-        `valid_6:   {next_state, HEX0} = {(SW[3:0] == `b4) ? `open    : `close,     `h4};
-        `invalid_1: next_state = `invalid_2;
-        `invalid_2: next_state = `invalid_3;
-        `invalid_3: next_state = `invalid_4;
-        `invalid_4: next_state = `invalid_5;
-        `invalid_5: next_state = `close;
-        `close:     begin
-                      next_state = `close;
-                      {HEX5,HEX4,HEX3,HEX2,HEX1,HEX0} = `CLOSEd;
-                    end
-        `open:      begin
-                      next_state = `open;
-                      {HEX3,HEX2,HEX1,HEX0} = `OPEn;
-                    end
-        default:    next_state = 4'bxxxx;
+        `valid_1:   {next_state, state} = {(SW[3:0] == `b3) ? `valid_2 : `invalid_1, `valid_1};
+        `valid_2:   {next_state, state} = {(SW[3:0] == `b0) ? `valid_3 : `invalid_2, `valid_2};
+        `valid_3:   {next_state, state} = {(SW[3:0] == `b5) ? `valid_4 : `invalid_3, `valid_3};
+        `valid_4:   {next_state, state} = {(SW[3:0] == `b4) ? `valid_5 : `invalid_4, `valid_4};
+        `valid_5:   {next_state, state} = {(SW[3:0] == `b6) ? `valid_6 : `invalid_5, `valid_5};
+        `valid_6:   {next_state, state} = {(SW[3:0] == `b4) ? `open    : `close,     `valid_6};
+        `invalid_1: {next_state, state} = {`invalid_2, `invalid_1};
+        `invalid_2: {next_state, state} = {`invalid_3, `invalid_2};
+        `invalid_3: {next_state, state} = {`invalid_4, `invalid_3};
+        `invalid_4: {next_state, state} = {`invalid_5, `invalid_4};
+        `invalid_5: {next_state, state} = {`close, `invalid_5};
+        `close:     {next_state, state} = {`close, `close};
+        `open:      {next_state, state} = {`open, `open};
+        default:    {next_state, state} = {8{1'bx}};
       endcase
     end
+  end
+  always @(*) begin
+    
+  end
+  always @(*) begin
+    case(state)
+      `valid_1: {HEX5, HEX4, HEX3, HEX2, HEX1, HEX0} = temp;
+      `valid_2: {HEX5, HEX4, HEX3, HEX2, HEX1, HEX0} = temp;
+      `valid_3: {HEX5, HEX4, HEX3, HEX2, HEX1, HEX0} = temp;
+      `valid_4: {HEX5, HEX4, HEX3, HEX2, HEX1, HEX0} = temp;
+      `valid_5: {HEX5, HEX4, HEX3, HEX2, HEX1, HEX0} = temp;
+      `valid_6: {HEX5, HEX4, HEX3, HEX2, HEX1, HEX0} = temp;
+      `open: {HEX5, HEX4, HEX3, HEX2, HEX1, HEX0} = {{2{`h_blank}},`OPEn};
+      `invalid_1: {HEX5, HEX4, HEX3, HEX2, HEX1, HEX0} = temp;
+      `invalid_2: {HEX5, HEX4, HEX3, HEX2, HEX1, HEX0} = temp;
+      `invalid_3: {HEX5, HEX4, HEX3, HEX2, HEX1, HEX0} = temp;
+      `invalid_4: {HEX5, HEX4, HEX3, HEX2, HEX1, HEX0} = temp;
+      `invalid_5: {HEX5, HEX4, HEX3, HEX2, HEX1, HEX0} = temp;
+      `close: {HEX5, HEX4, HEX3, HEX2, HEX1, HEX0} = {7'b1000110,7'b1000111,7'b1000000,7'b0010010,7'b0000110,7'b0100001}; // Closed
+      default: {HEX5, HEX4, HEX3, HEX2, HEX1, HEX0} = {7'b1111111,7'b0000110,7'b0101111,7'b0101111,7'b1000000,7'b0101111}; // Closed
+    endcase
   end
 endmodule
 

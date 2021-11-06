@@ -1,0 +1,74 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/CPEN211/IntelQuartus/modelsim_ase/win32aloem
+vq1_tb
+Z0 !s110 1635982357
+!i10b 1
+!s100 QB_FfHbJe[b;Hj;njgj<T1
+IaS18UzGKad:f[PMcak^_P3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/CPEN211 new/lpt practice/lpt2_2017_q1
+w1635982346
+8D:/CPEN211 new/lpt practice/lpt2_2017_q1/lpt_2017_q1_tb.v
+FD:/CPEN211 new/lpt practice/lpt2_2017_q1/lpt_2017_q1_tb.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1635982357.000000
+!s107 D:/CPEN211 new/lpt practice/lpt2_2017_q1/lpt_2017_q1_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211 new/lpt practice/lpt2_2017_q1/lpt_2017_q1_tb.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vtop_module
+R0
+!i10b 1
+!s100 bjhdif:7LlDkf`zDOIOAR0
+IFFQZQzZIUzL0677Ki0CDS3
+R1
+R2
+Z7 w1635981488
+Z8 8D:/CPEN211 new/lpt practice/lpt2_2017_q1/lpt_2017_q1.v
+Z9 FD:/CPEN211 new/lpt practice/lpt2_2017_q1/lpt_2017_q1.v
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+Z10 !s107 D:/CPEN211 new/lpt practice/lpt2_2017_q1/lpt_2017_q1.v|
+Z11 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211 new/lpt practice/lpt2_2017_q1/lpt_2017_q1.v|
+!i113 1
+R5
+R6
+vvDFF
+R0
+!i10b 1
+!s100 b@<aKI];d>FT66g1D4U3;3
+IA?oJ=HlVDOzJ0Z?Jk3Ee02
+R1
+R2
+R7
+R8
+R9
+L0 42
+R3
+r1
+!s85 0
+31
+R4
+R10
+R11
+!i113 1
+R5
+R6
+nv@d@f@f

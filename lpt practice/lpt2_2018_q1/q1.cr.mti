@@ -1,0 +1,16 @@
+{D:/CPEN211 new/lpt practice/lpt2_2018_q1/lpt_2018_q1.v} {1 {vlog -work work -stats=none {D:/CPEN211 new/lpt practice/lpt2_2018_q1/lpt_2018_q1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module top_module
+-- Compiling module vDFF
+
+Top level modules:
+	top_module
+
+} {} {}} {D:/CPEN211 new/lpt practice/lpt2_2018_q1/lpt_2018_q1_tb.v} {1 {vlog -work work -stats=none {D:/CPEN211 new/lpt practice/lpt2_2018_q1/lpt_2018_q1_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module q1_tb
+
+Top level modules:
+	q1_tb
+
+} {} {}}
