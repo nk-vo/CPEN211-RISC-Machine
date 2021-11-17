@@ -9,7 +9,7 @@ z2
 cModel Technology
 dD:/IntelQuartus/modelsim_ase/win32aloem
 vALU
-!s110 1637051544
+!s110 1637119293
 !i10b 1
 !s100 4eC7;Z^Yg>[L=J^L6a1nN2
 I9iI9ENzk3g0XBPZdlW@>01
@@ -23,7 +23,7 @@ Z2 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1637051544.000000
+!s108 1637119293.000000
 !s107 D:/CPEN211/lab5/alu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211/lab5/alu.v|
 !i113 1
@@ -31,7 +31,7 @@ Z3 o-work work
 Z4 tCvgOpt 0
 n@a@l@u
 vALU_tb
-Z5 !s110 1637051546
+Z5 !s110 1637119294
 !i10b 1
 !s100 <2fO<h3i`JdEnJ2Sz6ULc0
 Iea2Eee?Ea5Q?[D549QT0Y1
@@ -45,7 +45,7 @@ R2
 r1
 !s85 0
 31
-Z8 !s108 1637051545.000000
+Z8 !s108 1637119294.000000
 Z9 !s107 D:/CPEN211/lab5/alu_tb.v|
 Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211/lab5/alu_tb.v|
 !i113 1
@@ -74,7 +74,7 @@ R10
 R3
 R4
 vdatapath
-R5
+Z11 !s110 1637119295
 !i10b 1
 !s100 <?9MS2aRNMoM?gVf=1eRm2
 Ibmhj`UMRHlI[eAe3F`[7>2
@@ -88,198 +88,198 @@ R2
 r1
 !s85 0
 31
-Z11 !s108 1637051546.000000
+R8
 !s107 D:/CPEN211/lab5/datapath.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211/lab5/datapath.v|
 !i113 1
 R3
 R4
 vdatapath_tb
-!s110 1637115968
+R11
 !i10b 1
-!s100 kc<Mc>IS`?4XgR9S1_8Im0
-Iz5^:k]?Gflgb;jQlkIhbl0
+!s100 17YUACJTRXci>>ZY@A3jf3
+I5RYbJ5n6o]i^HLZXzN0O<1
 R0
 R1
-w1637115961
+w1637117396
 8D:/CPEN211/lab5/datapath_tb.v
 FD:/CPEN211/lab5/datapath_tb.v
-L0 27
+L0 23
 R2
 r1
 !s85 0
 31
-!s108 1637115968.000000
+!s108 1637119295.000000
 !s107 D:/CPEN211/lab5/datapath_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211/lab5/datapath_tb.v|
 !i113 1
 R3
 R4
 vdec
-Z12 !s110 1637051545
+R5
 !i10b 1
 !s100 a:khE18OkmIFkINjziFW51
 IcYS803h^;m`@cfgBoBl5O3
 R0
 R1
-Z13 w1636961625
-Z14 8D:/CPEN211/lab5/regfile.v
-Z15 FD:/CPEN211/lab5/regfile.v
+Z12 w1636961625
+Z13 8D:/CPEN211/lab5/regfile.v
+Z14 FD:/CPEN211/lab5/regfile.v
 L0 39
 R2
 r1
 !s85 0
 31
 R8
-Z16 !s107 D:/CPEN211/lab5/regfile.v|
-Z17 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211/lab5/regfile.v|
+Z15 !s107 D:/CPEN211/lab5/regfile.v|
+Z16 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211/lab5/regfile.v|
 !i113 1
 R3
 R4
 vinput_iface
-R12
+R5
 !i10b 1
 !s100 9=VLblSjgG9jVglRfIOhH2
 IQA^e;RZiLWO=@cgIF0Zg]2
 R0
 R1
-Z18 w1636961586
-Z19 8D:/CPEN211/lab5/lab5_top.v
-Z20 FD:/CPEN211/lab5/lab5_top.v
+Z17 w1636961586
+Z18 8D:/CPEN211/lab5/lab5_top.v
+Z19 FD:/CPEN211/lab5/lab5_top.v
 L0 109
 R2
 r1
 !s85 0
 31
 R8
-Z21 !s107 D:/CPEN211/lab5/lab5_top.v|
-Z22 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211/lab5/lab5_top.v|
+Z20 !s107 D:/CPEN211/lab5/lab5_top.v|
+Z21 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211/lab5/lab5_top.v|
 !i113 1
 R3
 R4
 vlab5_check_1
-R12
+R5
 !i10b 1
 !s100 T3ka=^BB;d_AjbA^7f1HI1
 I0_Mbg=i8XfN]65n:VOYOP3
 R0
 R1
-Z23 w1636156934
-Z24 8D:/CPEN211/lab5/lab5_autograder_check.v
-Z25 FD:/CPEN211/lab5/lab5_autograder_check.v
+Z22 w1636156934
+Z23 8D:/CPEN211/lab5/lab5_autograder_check.v
+Z24 FD:/CPEN211/lab5/lab5_autograder_check.v
 L0 7
 R2
 r1
 !s85 0
 31
 R8
-Z26 !s107 D:/CPEN211/lab5/lab5_autograder_check.v|
-Z27 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211/lab5/lab5_autograder_check.v|
+Z25 !s107 D:/CPEN211/lab5/lab5_autograder_check.v|
+Z26 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211/lab5/lab5_autograder_check.v|
 !i113 1
 R3
 R4
 vlab5_check_2
-R12
+R5
 !i10b 1
 !s100 6D@D82^C[[R7ek=b@Z@HV0
 IeE9zSIbV:cIFX9FEbjO<?2
 R0
 R1
+R22
 R23
 R24
-R25
 L0 84
 R2
 r1
 !s85 0
 31
 R8
+R25
 R26
-R27
 !i113 1
 R3
 R4
 vlab5_check_3
-R12
+R5
 !i10b 1
 !s100 ?Y0zmS]RZ:l`ZW`_l1A`B3
 IjEFAakbbfzOoC28MWO7kC3
 R0
 R1
+R22
 R23
 R24
-R25
 L0 140
 R2
 r1
 !s85 0
 31
 R8
+R25
 R26
-R27
 !i113 1
 R3
 R4
 vlab5_check_4
-R12
+R5
 !i10b 1
 !s100 9CmmUgcCJg:^J?XI[>9HJ0
 IE9`igY2WiN>e7AJnhb5hT3
 R0
 R1
+R22
 R23
 R24
-R25
 L0 165
 R2
 r1
 !s85 0
 31
 R8
+R25
 R26
-R27
 !i113 1
 R3
 R4
 vlab5_top
-R12
+R5
 !i10b 1
 !s100 AIV0M5ZV1AhcPcf@?HTFj3
 I`L8G7l[i^>@7V9VFPd^AC1
 R0
 R1
+R17
 R18
 R19
-R20
-Z28 L0 57
+Z27 L0 57
 R2
 r1
 !s85 0
 31
 R8
+R20
 R21
-R22
 !i113 1
 R3
 R4
 vregfile
-R12
+R5
 !i10b 1
 !s100 f0[b@^VR1OnokGlXabQdT1
 Ig4M^zeCW2@aLTP;@KN9<b3
 R0
 R1
+R12
 R13
 R14
-R15
 L0 1
 R2
 r1
 !s85 0
 31
 R8
+R15
 R16
-R17
 !i113 1
 R3
 R4
@@ -298,35 +298,35 @@ R2
 r1
 !s85 0
 31
-R11
+R8
 !s107 D:/CPEN211/lab5/regfile_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211/lab5/regfile_tb.v|
 !i113 1
 R3
 R4
 vregister
-R12
+R5
 !i10b 1
 !s100 V:3F;^0FFF7f3BfPnA>402
 I5MZAioB5Nic?n6_[BB3BU3
 R0
 R1
+R12
 R13
 R14
-R15
-R28
+R27
 R2
 r1
 !s85 0
 31
 R8
+R15
 R16
-R17
 !i113 1
 R3
 R4
 vshifter
-R12
+R5
 !i10b 1
 !s100 eml[YWi@T7?N>A;9fKP:81
 IGA]VUOICBU2]:57T<=Q<82
@@ -361,51 +361,51 @@ R2
 r1
 !s85 0
 31
-R11
+R8
 !s107 D:/CPEN211/lab5/shifter_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/CPEN211/lab5/shifter_tb.v|
 !i113 1
 R3
 R4
 vsseg
-R12
+R5
 !i10b 1
 !s100 nKiXdT2caamMViILBN1`I3
 I8XSmG;FOl1zAC]M;;Lbie2
 R0
 R1
+R17
 R18
 R19
-R20
 L0 183
 R2
 r1
 !s85 0
 31
 R8
+R20
 R21
-R22
 !i113 1
 R3
 R4
 vvDFF
-R12
+R5
 !i10b 1
 !s100 [6OI`1nd0dZ>W8O1Rbd6U1
 IPfaR2[m8XN[P@1:;6VGEQ3
 R0
 R1
+R12
 R13
 R14
-R15
 L0 47
 R2
 r1
 !s85 0
 31
 R8
+R15
 R16
-R17
 !i113 1
 R3
 R4
