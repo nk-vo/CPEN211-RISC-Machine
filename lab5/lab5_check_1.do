@@ -1,6 +1,5 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /lab5_check_1/Z
 add wave -noupdate /lab5_check_1/writenum
 add wave -noupdate /lab5_check_1/write
 add wave -noupdate /lab5_check_1/sout
@@ -11,12 +10,13 @@ add wave -noupdate /lab5_check_1/err
 add wave -noupdate /lab5_check_1/data_out
 add wave -noupdate /lab5_check_1/data_in
 add wave -noupdate /lab5_check_1/clk
-add wave -noupdate /lab5_check_1/Bin
 add wave -noupdate /lab5_check_1/aout
-add wave -noupdate /lab5_check_1/ALUop
+add wave -noupdate /lab5_check_1/Z
+add wave -noupdate /lab5_check_1/Bin
 add wave -noupdate /lab5_check_1/Ain
+add wave -noupdate /lab5_check_1/ALUop
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {4 ps} 0}
+WaveRestoreCursors {{Cursor 1} {5 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100

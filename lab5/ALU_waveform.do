@@ -8,7 +8,7 @@ add wave -noupdate /ALU_tb/Bin
 add wave -noupdate /ALU_tb/Ain
 add wave -noupdate /ALU_tb/ALUop
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {82 ps} 0}
+WaveRestoreCursors {{Cursor 1} {84 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100

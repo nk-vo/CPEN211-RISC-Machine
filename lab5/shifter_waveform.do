@@ -6,7 +6,7 @@ add wave -noupdate /shifter_tb/in
 add wave -noupdate /shifter_tb/err
 add wave -noupdate /shifter_tb/clk
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {12 ps} 0}
+WaveRestoreCursors {{Cursor 1} {25 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100

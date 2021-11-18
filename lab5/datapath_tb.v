@@ -38,7 +38,7 @@ module datapath_tb;
 	assign R4 = DUT.REGFILE.R4; assign R5 = DUT.REGFILE.R5;
 	assign R6 = DUT.REGFILE.R6; assign R7 = DUT.REGFILE.R7;
 
-	task assert;
+	task checker;
 		input [15:0] data;
 		input [15:0] expected_data;
 		begin
@@ -125,35 +125,35 @@ module datapath_tb;
 
 		$display("MOV R0, #7");
 		MOV(`R0_addr, 16'd7, 0);
-		assert(R0, 16'd7);
+		checker(R0, 16'd7);
 
 		$display("MOV R1, #2");
 		MOV(`R1_addr, 16'd2, 0);
-		assert(R1, 16'd2);
+		checker(R1, 16'd2);
 
 		$display("ADD R2, R1, R0, LSL#1");
 		ADD(`R2_addr, `R1_addr, `R0_addr, `SHIFT_LEFT);
-		assert(R2, 16'd16);
+		checker(R2, 16'd16);
 
 		$display("MOV R3, #27653");
 		MOV(`R3_addr, 16'd27653, 0);
-		assert(R3, 16'd27653);
+		checker(R3, 16'd27653);
 
 		$display("MOV R4, #7653");
 		MOV(`R4_addr, 16'd7653, 0);
-		assert(R4, 16'd7653);
+		checker(R4, 16'd7653);
 
 		$display("SUB R5, R3, R4");
 		SUB(`R5_addr, `R3_addr, `R4_addr, `NO_SHIFT);
-		assert(R5, 16'd20000);
+		checker(R5, 16'd20000);
 
 		$display("MOV R6, #0");
 		MOV(`R6_addr, 16'd0, 0);
-		assert(R6, 16'd0);
+		checker(R6, 16'd0);
 
 		$display("COMPLEMENT R6, Store R7");
 		COMPLEMENT(`R7_addr, `R6_addr, `NO_SHIFT);
-		assert(R7, ~(R6));
+		checker(R7, ~(R6));
 
 		if (~err) $display("PASSED ALL TESTS");
 		else $display("FAILED");

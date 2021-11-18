@@ -1,6 +1,5 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /lab5_check_3/tb_err
 add wave -noupdate /lab5_check_3/TB/writenum
 add wave -noupdate /lab5_check_3/TB/write
 add wave -noupdate /lab5_check_3/TB/vsel
@@ -27,7 +26,7 @@ add wave -noupdate /lab5_check_3/TB/R1
 add wave -noupdate /lab5_check_3/TB/R0
 add wave -noupdate /lab5_check_3/TB/ALUop
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {39 ps} 0}
+WaveRestoreCursors {{Cursor 1} {123 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -43,4 +42,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {126 ps}
+WaveRestoreZoom {0 ps} {1 ns}
