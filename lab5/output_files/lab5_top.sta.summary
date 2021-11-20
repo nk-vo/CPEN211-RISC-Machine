@@ -3,67 +3,67 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'KEY[0]'
-Slack : -5.023
-TNS   : -629.346
+Slack : -6.849
+TNS   : -853.970
 
 Type  : Slow 1100mV 85C Model Hold 'KEY[0]'
-Slack : 0.712
-TNS   : 0.000
+Slack : -4.053
+TNS   : -451.967
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
 Slack : -0.394
-TNS   : -103.016
+TNS   : -108.914
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -0.394
-TNS   : -9.068
+TNS   : -8.991
 
 Type  : Slow 1100mV 0C Model Setup 'KEY[0]'
-Slack : -5.135
-TNS   : -630.575
+Slack : -6.636
+TNS   : -823.744
 
 Type  : Slow 1100mV 0C Model Hold 'KEY[0]'
-Slack : 0.721
-TNS   : 0.000
+Slack : -3.778
+TNS   : -423.814
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
 Slack : -0.394
-TNS   : -116.444
+TNS   : -97.703
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -0.394
-TNS   : -9.832
+TNS   : -9.498
 
 Type  : Fast 1100mV 85C Model Setup 'KEY[0]'
-Slack : -2.391
-TNS   : -287.996
+Slack : -4.096
+TNS   : -507.733
 
 Type  : Fast 1100mV 85C Model Hold 'KEY[0]'
-Slack : 0.441
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.087
-TNS   : -1.426
+Slack : -2.410
+TNS   : -269.330
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
-Slack : -0.054
-TNS   : -8.589
+Slack : -0.316
+TNS   : -55.393
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.093
+TNS   : -1.557
 
 Type  : Fast 1100mV 0C Model Setup 'KEY[0]'
-Slack : -2.117
-TNS   : -254.717
+Slack : -3.466
+TNS   : -423.588
 
 Type  : Fast 1100mV 0C Model Hold 'KEY[0]'
-Slack : 0.411
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.085
-TNS   : -1.399
+Slack : -2.337
+TNS   : -272.086
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
-Slack : -0.078
-TNS   : -12.429
+Slack : -0.314
+TNS   : -54.665
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.089
+TNS   : -1.497
 
 ------------------------------------------------------------
