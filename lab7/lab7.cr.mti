@@ -1,0 +1,51 @@
+D:/CPEN211/lab7/lab7_top_tb.v {1 {vlog -work work -stats=none D:/CPEN211/lab7/lab7_top_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab7_check_tb
+
+Top level modules:
+	lab7_check_tb
+
+} {} {}} D:/CPEN211/lab7/shifter.v {1 {vlog -work work -stats=none D:/CPEN211/lab7/shifter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shifter
+
+Top level modules:
+	shifter
+
+} {} {}} D:/CPEN211/lab7/alu.v {1 {vlog -work work -stats=none D:/CPEN211/lab7/alu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/CPEN211/lab7/regfile.v {1 {vlog -work work -stats=none D:/CPEN211/lab7/regfile.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module regfile
+-- Compiling module Dec
+-- Compiling module RLE
+-- Compiling module Mux8
+
+Top level modules:
+	regfile
+
+} {} {}} D:/CPEN211/lab7/datapath.v {1 {vlog -work work -stats=none D:/CPEN211/lab7/datapath.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module datapath
+-- Compiling module Mux4
+-- Compiling module Mux2
+
+Top level modules:
+	datapath
+
+} {} {}} D:/CPEN211/lab7/cpu.v {1 {vlog -work work -stats=none D:/CPEN211/lab7/cpu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cpu
+-- Compiling module instruction_register
+-- Compiling module instruction_decoder
+-- Compiling module FSM
+
+Top level modules:
+	cpu
+
+} {} {}}

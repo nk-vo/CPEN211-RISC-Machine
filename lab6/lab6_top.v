@@ -96,7 +96,23 @@ endmodule
 module sseg(in,segs);
   input [3:0] in;
   output [6:0] segs;
-
+  `define h_blank 7'b1_111_111
+  `define h0      7'b1_000_000
+  `define h1      7'b1_111_001
+  `define h2      7'b0_100_100
+  `define h3      7'b0_110_000
+  `define h4      7'b0_011_001
+  `define h5      7'b0_010_010
+  `define h6      7'b0_000_010
+  `define h7      7'b1_111_000
+  `define h8      7'b0_000_000
+  `define h9      7'b0_010_000
+  `define ha      7'b0_010_000
+  `define hb      7'b0_000_011
+  `define hc      7'b1_000_110
+  `define hd      7'b0_100_001
+  `define he      7'b0_000_110
+  `define hf      7'b0_001_110
   // NOTE: The code for sseg below is not complete: You can use your code from
   // Lab4 to fill this in or code from someone else's Lab4.  
   //
@@ -141,23 +157,7 @@ module sseg(in,segs);
   //            13 | d
   //            14 | E
   //            15 | F
-  `define h_blank 7'b1_111_111
-  `define h0      7'b1_000_000
-  `define h1      7'b1_111_001
-  `define h2      7'b0_100_100
-  `define h3      7'b0_110_000
-  `define h4      7'b0_011_001
-  `define h5      7'b0_010_010
-  `define h6      7'b0_000_010
-  `define h7      7'b1_111_000
-  `define h8      7'b0_000_000
-  `define h9      7'b0_010_000
-  `define ha      7'b0_010_000
-  `define hb      7'b0_000_011
-  `define hc      7'b1_000_110
-  `define hd      7'b0_100_001
-  `define he      7'b0_000_110
-  `define hf      7'b0_001_110
+
   reg [6:0] segs;
 
   always @(*) begin

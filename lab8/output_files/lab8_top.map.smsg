@@ -1,0 +1,10 @@
+Warning (10273): Verilog HDL warning at shifter.v(14): extended using "x" or "z" File: C:/Users/Brian Li/Documents/CPEN 211 ALL/lab8/shifter.v Line: 14
+Info (10281): Verilog HDL Declaration information at regfile.v(8): object "R0" differs only in case from object "r0" in the same scope File: C:/Users/Brian Li/Documents/CPEN 211 ALL/lab8/regfile.v Line: 8
+Info (10281): Verilog HDL Declaration information at regfile.v(8): object "R1" differs only in case from object "r1" in the same scope File: C:/Users/Brian Li/Documents/CPEN 211 ALL/lab8/regfile.v Line: 8
+Info (10281): Verilog HDL Declaration information at regfile.v(8): object "R2" differs only in case from object "r2" in the same scope File: C:/Users/Brian Li/Documents/CPEN 211 ALL/lab8/regfile.v Line: 8
+Info (10281): Verilog HDL Declaration information at regfile.v(8): object "R3" differs only in case from object "r3" in the same scope File: C:/Users/Brian Li/Documents/CPEN 211 ALL/lab8/regfile.v Line: 8
+Info (10281): Verilog HDL Declaration information at regfile.v(8): object "R4" differs only in case from object "r4" in the same scope File: C:/Users/Brian Li/Documents/CPEN 211 ALL/lab8/regfile.v Line: 8
+Info (10281): Verilog HDL Declaration information at regfile.v(8): object "R5" differs only in case from object "r5" in the same scope File: C:/Users/Brian Li/Documents/CPEN 211 ALL/lab8/regfile.v Line: 8
+Info (10281): Verilog HDL Declaration information at regfile.v(8): object "R6" differs only in case from object "r6" in the same scope File: C:/Users/Brian Li/Documents/CPEN 211 ALL/lab8/regfile.v Line: 8
+Info (10281): Verilog HDL Declaration information at regfile.v(8): object "R7" differs only in case from object "r7" in the same scope File: C:/Users/Brian Li/Documents/CPEN 211 ALL/lab8/regfile.v Line: 8
+Info (10281): Verilog HDL Declaration information at cpu.v(47): object "PC" differs only in case from object "pc" in the same scope File: C:/Users/Brian Li/Documents/CPEN 211 ALL/lab8/cpu.v Line: 47

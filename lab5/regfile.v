@@ -44,16 +44,6 @@ module dec(in, out);
     assign out = 1 << in;
 endmodule
 
-module vDFF(clk, in, out);
-    parameter n = 2;
-    input clk;
-    input [n-1:0] in;
-    output reg [n-1:0] out;
-
-    always @(posedge clk)
-        out = in;
-endmodule
-
 module register(clk, load_enable, data_in, data_out);
     parameter n = 2;
     input clk, load_enable;

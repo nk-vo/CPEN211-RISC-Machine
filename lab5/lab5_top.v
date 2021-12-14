@@ -165,7 +165,7 @@ endmodule
 // the book is not the same as on the DE1-SoC (see comments below).
 `define h_blank 7'b1_111_111
 `define h0      7'b1_000_000
-`define h1      7'b0_000_110
+`define h1      7'b1_111_001
 `define h2      7'b0_100_100
 `define h3      7'b0_110_000
 `define h4      7'b0_011_001

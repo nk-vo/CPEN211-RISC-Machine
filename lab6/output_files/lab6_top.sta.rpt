@@ -1,5 +1,5 @@
 Timing Analyzer report for lab6_top
-Fri Nov 26 23:02:52 2021
+Thu Dec 02 19:32:44 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -99,12 +99,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.09        ;
+; Average used               ; 1.11        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   9.2%      ;
+;     Processor 2            ;  11.3%      ;
 +----------------------------+-------------+
 
 
@@ -865,7 +865,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Nov 26 23:02:39 2021
+    Info: Processing started: Thu Dec 02 19:32:19 2021
 Info: Command: quartus_sta lab6_top -c lab6_top
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -962,9 +962,9 @@ Info (332146): Worst-case minimum pulse width slack is -0.314
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5112 megabytes
-    Info: Processing ended: Fri Nov 26 23:02:52 2021
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 5113 megabytes
+    Info: Processing ended: Thu Dec 02 19:32:44 2021
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:19
 
 

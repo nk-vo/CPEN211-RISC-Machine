@@ -1,5 +1,5 @@
 Fitter report for lab5_top
-Fri Nov 19 17:02:17 2021
+Sat Nov 20 00:05:08 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Fri Nov 19 17:02:17 2021       ;
+; Fitter Status                   ; Successful - Sat Nov 20 00:05:07 2021       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; lab5_top                                    ;
 ; Top-level Entity Name           ; lab5_top                                    ;
@@ -1687,49 +1687,49 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------+-------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                 ;
-+------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node   ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                              ; Entity Name ; Library Name ;
-+------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------------------------------+-------------+--------------+
-; |lab5_top                    ; 132.5 (0.5)          ; 162.0 (0.5)                      ; 29.5 (0.0)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 192 (1)             ; 194 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 67   ; 0            ; |lab5_top                                                        ; lab5_top    ; work         ;
-;    |datapath:DP|             ; 110.7 (15.9)         ; 137.7 (15.9)                     ; 27.0 (0.0)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 154 (33)            ; 177 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP                                            ; datapath    ; work         ;
-;       |ALU:U2_alu|           ; 19.0 (19.0)          ; 21.1 (21.1)                      ; 2.1 (2.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 45 (45)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|ALU:U2_alu                                 ; ALU         ; work         ;
-;       |regfile:REGFILE|      ; 45.5 (23.7)          ; 71.2 (29.2)                      ; 25.7 (5.5)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 59 (58)             ; 128 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE                            ; regfile     ; work         ;
-;          |dec:readnum_dec|   ; 0.3 (0.3)            ; 0.5 (0.5)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|dec:readnum_dec            ; dec         ; work         ;
-;          |register:r0|       ; 0.5 (0.0)            ; 4.7 (0.0)                        ; 4.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r0                ; register    ; work         ;
-;             |d_flip_flop:ff| ; 0.5 (0.5)            ; 4.7 (4.7)                        ; 4.2 (4.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r0|d_flip_flop:ff ; d_flip_flop ; work         ;
-;          |register:r1|       ; 4.0 (0.0)            ; 4.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r1                ; register    ; work         ;
-;             |d_flip_flop:ff| ; 4.0 (4.0)            ; 4.0 (4.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r1|d_flip_flop:ff ; d_flip_flop ; work         ;
-;          |register:r2|       ; 5.3 (0.0)            ; 5.3 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r2                ; register    ; work         ;
-;             |d_flip_flop:ff| ; 5.3 (5.3)            ; 5.3 (5.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r2|d_flip_flop:ff ; d_flip_flop ; work         ;
-;          |register:r3|       ; 3.0 (0.0)            ; 5.0 (0.0)                        ; 2.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r3                ; register    ; work         ;
-;             |d_flip_flop:ff| ; 3.0 (3.0)            ; 5.0 (5.0)                        ; 2.0 (2.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r3|d_flip_flop:ff ; d_flip_flop ; work         ;
-;          |register:r4|       ; 0.3 (0.0)            ; 8.0 (0.0)                        ; 7.7 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r4                ; register    ; work         ;
-;             |d_flip_flop:ff| ; 0.3 (0.3)            ; 8.0 (8.0)                        ; 7.7 (7.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff ; d_flip_flop ; work         ;
-;          |register:r5|       ; 0.0 (0.0)            ; 5.5 (0.0)                        ; 5.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r5                ; register    ; work         ;
-;             |d_flip_flop:ff| ; 0.0 (0.0)            ; 5.5 (5.5)                        ; 5.5 (5.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff ; d_flip_flop ; work         ;
-;          |register:r6|       ; 4.2 (0.0)            ; 4.3 (0.0)                        ; 0.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r6                ; register    ; work         ;
-;             |d_flip_flop:ff| ; 4.2 (4.2)            ; 4.3 (4.3)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff ; d_flip_flop ; work         ;
-;          |register:r7|       ; 4.2 (0.0)            ; 4.7 (0.0)                        ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r7                ; register    ; work         ;
-;             |d_flip_flop:ff| ; 4.2 (4.2)            ; 4.7 (4.7)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r7|d_flip_flop:ff ; d_flip_flop ; work         ;
-;       |register:A_reg|       ; 4.5 (0.0)            ; 4.8 (0.0)                        ; 0.3 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:A_reg                             ; register    ; work         ;
-;          |d_flip_flop:ff|    ; 4.5 (4.5)            ; 4.8 (4.8)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:A_reg|d_flip_flop:ff              ; d_flip_flop ; work         ;
-;       |register:B_reg|       ; 5.0 (0.0)            ; 5.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:B_reg                             ; register    ; work         ;
-;          |d_flip_flop:ff|    ; 5.0 (5.0)            ; 5.0 (5.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:B_reg|d_flip_flop:ff              ; d_flip_flop ; work         ;
-;       |register:C_reg|       ; 7.8 (0.0)            ; 7.8 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:C_reg                             ; register    ; work         ;
-;          |d_flip_flop:ff|    ; 7.8 (7.8)            ; 7.8 (7.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:C_reg|d_flip_flop:ff              ; d_flip_flop ; work         ;
-;       |register:status|      ; 11.0 (0.0)           ; 11.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 15 (0)              ; 1 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:status                            ; register    ; work         ;
-;          |d_flip_flop:ff|    ; 11.0 (11.0)          ; 11.0 (11.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 15 (15)             ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:status|d_flip_flop:ff             ; d_flip_flop ; work         ;
-;       |shifter:U1_shift|     ; 0.8 (0.8)            ; 0.8 (0.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|shifter:U1_shift                           ; shifter     ; work         ;
-;    |input_iface:IN|          ; 7.3 (2.8)            ; 9.8 (3.3)                        ; 2.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (9)               ; 17 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|input_iface:IN                                         ; input_iface ; work         ;
-;       |vDFF:CTRL|            ; 2.2 (2.2)            ; 3.5 (3.5)                        ; 1.3 (1.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 9 (9)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|input_iface:IN|vDFF:CTRL                               ; vDFF        ; work         ;
-;       |vDFF:DATA|            ; 2.3 (2.3)            ; 3.0 (3.0)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|input_iface:IN|vDFF:DATA                               ; vDFF        ; work         ;
-;    |sseg:H0|                 ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|sseg:H0                                                ; sseg        ; work         ;
-;    |sseg:H1|                 ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|sseg:H1                                                ; sseg        ; work         ;
-;    |sseg:H2|                 ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|sseg:H2                                                ; sseg        ; work         ;
-;    |sseg:H3|                 ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|sseg:H3                                                ; sseg        ; work         ;
-+------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------------------------------+-------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                           ;
++-----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node  ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Entity Name ; Library Name ;
++-----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------------+-------------+--------------+
+; |lab5_top                   ; 132.5 (0.5)          ; 162.0 (0.5)                      ; 29.5 (0.0)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 192 (1)             ; 194 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 67   ; 0            ; |lab5_top                                                   ; lab5_top    ; work         ;
+;    |datapath:DP|            ; 110.7 (15.9)         ; 137.7 (15.9)                     ; 27.0 (0.0)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 154 (33)            ; 177 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP                                       ; datapath    ; work         ;
+;       |ALU:alu_u2|          ; 19.0 (19.0)          ; 21.1 (21.1)                      ; 2.1 (2.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 45 (45)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|ALU:alu_u2                            ; ALU         ; work         ;
+;       |regfile:REGFILE|     ; 45.5 (23.7)          ; 71.2 (29.2)                      ; 25.7 (5.5)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 59 (58)             ; 128 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE                       ; regfile     ; work         ;
+;          |dec:read_dec|     ; 0.3 (0.3)            ; 0.5 (0.5)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|dec:read_dec          ; dec         ; work         ;
+;          |register:r0|      ; 0.5 (0.0)            ; 4.7 (0.0)                        ; 4.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r0           ; register    ; work         ;
+;             |vDFF:vdff|     ; 0.5 (0.5)            ; 4.7 (4.7)                        ; 4.2 (4.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r0|vDFF:vdff ; vDFF        ; work         ;
+;          |register:r1|      ; 4.0 (0.0)            ; 4.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r1           ; register    ; work         ;
+;             |vDFF:vdff|     ; 4.0 (4.0)            ; 4.0 (4.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r1|vDFF:vdff ; vDFF        ; work         ;
+;          |register:r2|      ; 5.3 (0.0)            ; 5.3 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r2           ; register    ; work         ;
+;             |vDFF:vdff|     ; 5.3 (5.3)            ; 5.3 (5.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r2|vDFF:vdff ; vDFF        ; work         ;
+;          |register:r3|      ; 3.0 (0.0)            ; 5.0 (0.0)                        ; 2.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r3           ; register    ; work         ;
+;             |vDFF:vdff|     ; 3.0 (3.0)            ; 5.0 (5.0)                        ; 2.0 (2.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r3|vDFF:vdff ; vDFF        ; work         ;
+;          |register:r4|      ; 0.3 (0.0)            ; 8.0 (0.0)                        ; 7.7 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r4           ; register    ; work         ;
+;             |vDFF:vdff|     ; 0.3 (0.3)            ; 8.0 (8.0)                        ; 7.7 (7.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff ; vDFF        ; work         ;
+;          |register:r5|      ; 0.0 (0.0)            ; 5.5 (0.0)                        ; 5.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r5           ; register    ; work         ;
+;             |vDFF:vdff|     ; 0.0 (0.0)            ; 5.5 (5.5)                        ; 5.5 (5.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff ; vDFF        ; work         ;
+;          |register:r6|      ; 4.2 (0.0)            ; 4.3 (0.0)                        ; 0.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r6           ; register    ; work         ;
+;             |vDFF:vdff|     ; 4.2 (4.2)            ; 4.3 (4.3)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff ; vDFF        ; work         ;
+;          |register:r7|      ; 4.2 (0.0)            ; 4.7 (0.0)                        ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r7           ; register    ; work         ;
+;             |vDFF:vdff|     ; 4.2 (4.2)            ; 4.7 (4.7)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE|register:r7|vDFF:vdff ; vDFF        ; work         ;
+;       |register:regA|       ; 4.5 (0.0)            ; 4.8 (0.0)                        ; 0.3 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:regA                         ; register    ; work         ;
+;          |vDFF:vdff|        ; 4.5 (4.5)            ; 4.8 (4.8)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:regA|vDFF:vdff               ; vDFF        ; work         ;
+;       |register:regB|       ; 5.0 (0.0)            ; 5.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:regB                         ; register    ; work         ;
+;          |vDFF:vdff|        ; 5.0 (5.0)            ; 5.0 (5.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:regB|vDFF:vdff               ; vDFF        ; work         ;
+;       |register:regC|       ; 7.8 (0.0)            ; 7.8 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:regC                         ; register    ; work         ;
+;          |vDFF:vdff|        ; 7.8 (7.8)            ; 7.8 (7.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:regC|vDFF:vdff               ; vDFF        ; work         ;
+;       |register:status|     ; 11.0 (0.0)           ; 11.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 15 (0)              ; 1 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:status                       ; register    ; work         ;
+;          |vDFF:vdff|        ; 11.0 (11.0)          ; 11.0 (11.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 15 (15)             ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|register:status|vDFF:vdff             ; vDFF        ; work         ;
+;       |shifter:shifter_out| ; 0.8 (0.8)            ; 0.8 (0.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|shifter:shifter_out                   ; shifter     ; work         ;
+;    |input_iface:IN|         ; 7.3 (2.8)            ; 9.8 (3.3)                        ; 2.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (9)               ; 17 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|input_iface:IN                                    ; input_iface ; work         ;
+;       |vDFF:CTRL|           ; 2.2 (2.2)            ; 3.5 (3.5)                        ; 1.3 (1.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 9 (9)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|input_iface:IN|vDFF:CTRL                          ; vDFF        ; work         ;
+;       |vDFF:DATA|           ; 2.3 (2.3)            ; 3.0 (3.0)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|input_iface:IN|vDFF:DATA                          ; vDFF        ; work         ;
+;    |sseg:H0|                ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|sseg:H0                                           ; sseg        ; work         ;
+;    |sseg:H1|                ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|sseg:H1                                           ; sseg        ; work         ;
+;    |sseg:H2|                ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|sseg:H2                                           ; sseg        ; work         ;
+;    |sseg:H3|                ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab5_top|sseg:H3                                           ; sseg        ; work         ;
++-----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -2170,112 +2170,112 @@ Note: For more information on problematic transfers, consider running the Fitter
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                                                       ;
-+----------------------------------------------------------------+----------------------------------------------------------------+-------------------+
-; Source Register                                                ; Destination Register                                           ; Delay Added in ns ;
-+----------------------------------------------------------------+----------------------------------------------------------------+-------------------+
-; input_iface:IN|vDFF:CTRL|Q[1]                                  ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 6.361             ;
-; input_iface:IN|vDFF:CTRL|Q[4]                                  ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 6.357             ;
-; input_iface:IN|vDFF:CTRL|Q[2]                                  ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 6.343             ;
-; input_iface:IN|vDFF:DATA|Q[2]                                  ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 6.316             ;
-; input_iface:IN|vDFF:DATA|Q[1]                                  ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 6.267             ;
-; input_iface:IN|vDFF:CTRL|Q[5]                                  ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 6.032             ;
-; input_iface:IN|vDFF:CTRL|Q[3]                                  ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 5.999             ;
-; input_iface:IN|vDFF:DATA|Q[3]                                  ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 5.938             ;
-; input_iface:IN|vDFF:DATA|Q[4]                                  ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 5.899             ;
-; input_iface:IN|vDFF:CTRL|Q[6]                                  ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 5.897             ;
-; input_iface:IN|vDFF:CTRL|Q[8]                                  ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 5.894             ;
-; input_iface:IN|vDFF:DATA|Q[0]                                  ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 5.779             ;
-; input_iface:IN|vDFF:DATA|Q[7]                                  ; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[7]  ; 5.607             ;
-; input_iface:IN|vDFF:DATA|Q[6]                                  ; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[6]  ; 5.599             ;
-; input_iface:IN|vDFF:DATA|Q[5]                                  ; datapath:DP|regfile:REGFILE|register:r3|d_flip_flop:ff|out[5]  ; 5.562             ;
-; input_iface:IN|vDFF:CTRL|Q[7]                                  ; datapath:DP|register:C_reg|d_flip_flop:ff|out[0]               ; 5.560             ;
-; input_iface:IN|vDFF:CTRL|Q[0]                                  ; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[5]  ; 5.172             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[7]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.879             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[6]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.879             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[5]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.879             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[8]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.865             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[4]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.802             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[1]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.771             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[0]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.771             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[15]              ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.651             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[14]              ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.651             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[0]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.633             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[3]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.608             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[2]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.608             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[10]              ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.542             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[9]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.542             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[11]              ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.523             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[13]              ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.488             ;
-; datapath:DP|register:B_reg|d_flip_flop:ff|out[12]              ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.488             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[6]               ; datapath:DP|register:C_reg|d_flip_flop:ff|out[6]               ; 4.310             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[11]              ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.272             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[5]               ; datapath:DP|register:C_reg|d_flip_flop:ff|out[5]               ; 4.237             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[9]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.205             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[8]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.185             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[10]              ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.184             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[7]               ; datapath:DP|register:C_reg|d_flip_flop:ff|out[7]               ; 4.150             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[13]              ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 4.083             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[15]              ; datapath:DP|register:C_reg|d_flip_flop:ff|out[15]              ; 4.044             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[4]               ; datapath:DP|register:C_reg|d_flip_flop:ff|out[4]               ; 4.005             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[12]              ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 3.994             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[14]              ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 3.695             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[2]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 3.291             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[1]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 3.291             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[8]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[8]               ; 3.270             ;
-; datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff|out[8]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[8]               ; 3.270             ;
-; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[8]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[8]               ; 3.270             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[6]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[6]               ; 3.212             ;
-; datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff|out[6]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[6]               ; 3.212             ;
-; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[6]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[6]               ; 3.212             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[5]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[5]               ; 3.209             ;
-; datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff|out[5]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[5]               ; 3.209             ;
-; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[5]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[5]               ; 3.209             ;
-; datapath:DP|register:A_reg|d_flip_flop:ff|out[3]               ; datapath:DP|register:status|d_flip_flop:ff|out[0]              ; 3.207             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[4]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[4]               ; 3.062             ;
-; datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff|out[4]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[4]               ; 3.062             ;
-; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[4]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[4]               ; 3.062             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[1]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[1]               ; 3.046             ;
-; datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff|out[1]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[1]               ; 3.046             ;
-; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[1]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[1]               ; 3.046             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[11] ; datapath:DP|register:A_reg|d_flip_flop:ff|out[11]              ; 3.041             ;
-; datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff|out[11] ; datapath:DP|register:A_reg|d_flip_flop:ff|out[11]              ; 3.041             ;
-; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[11] ; datapath:DP|register:A_reg|d_flip_flop:ff|out[11]              ; 3.041             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[10] ; datapath:DP|register:A_reg|d_flip_flop:ff|out[10]              ; 3.032             ;
-; datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff|out[10] ; datapath:DP|register:A_reg|d_flip_flop:ff|out[10]              ; 3.032             ;
-; datapath:DP|register:C_reg|d_flip_flop:ff|out[11]              ; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[11] ; 3.032             ;
-; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[10] ; datapath:DP|register:A_reg|d_flip_flop:ff|out[10]              ; 3.032             ;
-; datapath:DP|register:C_reg|d_flip_flop:ff|out[1]               ; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[1]  ; 3.008             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[3]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[3]               ; 3.005             ;
-; datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff|out[3]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[3]               ; 3.005             ;
-; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[3]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[3]               ; 3.005             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[2]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[2]               ; 3.001             ;
-; datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff|out[2]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[2]               ; 3.001             ;
-; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[2]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[2]               ; 3.001             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[9]  ; datapath:DP|register:A_reg|d_flip_flop:ff|out[9]               ; 2.994             ;
-; datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff|out[9]  ; datapath:DP|register:A_reg|d_flip_flop:ff|out[9]               ; 2.994             ;
-; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[9]  ; datapath:DP|register:A_reg|d_flip_flop:ff|out[9]               ; 2.994             ;
-; datapath:DP|register:C_reg|d_flip_flop:ff|out[2]               ; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[2]  ; 2.984             ;
-; datapath:DP|register:C_reg|d_flip_flop:ff|out[9]               ; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[9]  ; 2.951             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[0]  ; datapath:DP|register:A_reg|d_flip_flop:ff|out[0]               ; 2.933             ;
-; datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff|out[0]  ; datapath:DP|register:A_reg|d_flip_flop:ff|out[0]               ; 2.933             ;
-; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[0]  ; datapath:DP|register:A_reg|d_flip_flop:ff|out[0]               ; 2.933             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[7]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[7]               ; 2.904             ;
-; datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff|out[7]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[7]               ; 2.904             ;
-; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[7]  ; datapath:DP|register:B_reg|d_flip_flop:ff|out[7]               ; 2.904             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[15] ; datapath:DP|register:B_reg|d_flip_flop:ff|out[15]              ; 2.900             ;
-; datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff|out[15] ; datapath:DP|register:B_reg|d_flip_flop:ff|out[15]              ; 2.900             ;
-; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[15] ; datapath:DP|register:B_reg|d_flip_flop:ff|out[15]              ; 2.900             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[12] ; datapath:DP|register:A_reg|d_flip_flop:ff|out[12]              ; 2.897             ;
-; datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff|out[12] ; datapath:DP|register:A_reg|d_flip_flop:ff|out[12]              ; 2.897             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[13] ; datapath:DP|register:A_reg|d_flip_flop:ff|out[13]              ; 2.897             ;
-; datapath:DP|regfile:REGFILE|register:r6|d_flip_flop:ff|out[13] ; datapath:DP|register:A_reg|d_flip_flop:ff|out[13]              ; 2.897             ;
-; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[13] ; datapath:DP|register:A_reg|d_flip_flop:ff|out[13]              ; 2.897             ;
-; datapath:DP|regfile:REGFILE|register:r4|d_flip_flop:ff|out[12] ; datapath:DP|register:A_reg|d_flip_flop:ff|out[12]              ; 2.897             ;
-; datapath:DP|register:C_reg|d_flip_flop:ff|out[0]               ; datapath:DP|regfile:REGFILE|register:r0|d_flip_flop:ff|out[0]  ; 2.888             ;
-; datapath:DP|regfile:REGFILE|register:r5|d_flip_flop:ff|out[14] ; datapath:DP|register:A_reg|d_flip_flop:ff|out[14]              ; 2.873             ;
-+----------------------------------------------------------------+----------------------------------------------------------------+-------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                         ;
++---------------------------------------------------------+---------------------------------------------------------+-------------------+
+; Source Register                                         ; Destination Register                                    ; Delay Added in ns ;
++---------------------------------------------------------+---------------------------------------------------------+-------------------+
+; input_iface:IN|vDFF:CTRL|Q[1]                           ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 6.361             ;
+; input_iface:IN|vDFF:CTRL|Q[4]                           ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 6.357             ;
+; input_iface:IN|vDFF:CTRL|Q[2]                           ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 6.343             ;
+; input_iface:IN|vDFF:DATA|Q[2]                           ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 6.316             ;
+; input_iface:IN|vDFF:DATA|Q[1]                           ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 6.267             ;
+; input_iface:IN|vDFF:CTRL|Q[5]                           ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 6.032             ;
+; input_iface:IN|vDFF:CTRL|Q[3]                           ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 5.999             ;
+; input_iface:IN|vDFF:DATA|Q[3]                           ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 5.938             ;
+; input_iface:IN|vDFF:DATA|Q[4]                           ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 5.899             ;
+; input_iface:IN|vDFF:CTRL|Q[6]                           ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 5.897             ;
+; input_iface:IN|vDFF:CTRL|Q[8]                           ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 5.894             ;
+; input_iface:IN|vDFF:DATA|Q[0]                           ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 5.779             ;
+; input_iface:IN|vDFF:DATA|Q[7]                           ; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[7]  ; 5.607             ;
+; input_iface:IN|vDFF:DATA|Q[6]                           ; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[6]  ; 5.599             ;
+; input_iface:IN|vDFF:DATA|Q[5]                           ; datapath:DP|regfile:REGFILE|register:r3|vDFF:vdff|Q[5]  ; 5.562             ;
+; input_iface:IN|vDFF:CTRL|Q[7]                           ; datapath:DP|register:regC|vDFF:vdff|Q[0]                ; 5.560             ;
+; input_iface:IN|vDFF:CTRL|Q[0]                           ; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[5]  ; 5.172             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[7]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.879             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[6]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.879             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[5]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.879             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[8]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.865             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[4]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.802             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[1]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.771             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[0]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.771             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[15]               ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.651             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[14]               ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.651             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[0]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.633             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[3]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.608             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[2]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.608             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[10]               ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.542             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[9]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.542             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[11]               ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.523             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[13]               ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.488             ;
+; datapath:DP|register:regB|vDFF:vdff|Q[12]               ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.488             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[6]                ; datapath:DP|register:regC|vDFF:vdff|Q[6]                ; 4.310             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[11]               ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.272             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[5]                ; datapath:DP|register:regC|vDFF:vdff|Q[5]                ; 4.237             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[9]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.205             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[8]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.185             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[10]               ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.184             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[7]                ; datapath:DP|register:regC|vDFF:vdff|Q[7]                ; 4.150             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[13]               ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 4.083             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[15]               ; datapath:DP|register:regC|vDFF:vdff|Q[15]               ; 4.044             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[4]                ; datapath:DP|register:regC|vDFF:vdff|Q[4]                ; 4.005             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[12]               ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 3.994             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[14]               ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 3.695             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[2]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 3.291             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[1]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 3.291             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[8]  ; datapath:DP|register:regB|vDFF:vdff|Q[8]                ; 3.270             ;
+; datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff|Q[8]  ; datapath:DP|register:regB|vDFF:vdff|Q[8]                ; 3.270             ;
+; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[8]  ; datapath:DP|register:regB|vDFF:vdff|Q[8]                ; 3.270             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[6]  ; datapath:DP|register:regB|vDFF:vdff|Q[6]                ; 3.212             ;
+; datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff|Q[6]  ; datapath:DP|register:regB|vDFF:vdff|Q[6]                ; 3.212             ;
+; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[6]  ; datapath:DP|register:regB|vDFF:vdff|Q[6]                ; 3.212             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[5]  ; datapath:DP|register:regB|vDFF:vdff|Q[5]                ; 3.209             ;
+; datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff|Q[5]  ; datapath:DP|register:regB|vDFF:vdff|Q[5]                ; 3.209             ;
+; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[5]  ; datapath:DP|register:regB|vDFF:vdff|Q[5]                ; 3.209             ;
+; datapath:DP|register:regA|vDFF:vdff|Q[3]                ; datapath:DP|register:status|vDFF:vdff|Q[0]              ; 3.207             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[4]  ; datapath:DP|register:regB|vDFF:vdff|Q[4]                ; 3.062             ;
+; datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff|Q[4]  ; datapath:DP|register:regB|vDFF:vdff|Q[4]                ; 3.062             ;
+; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[4]  ; datapath:DP|register:regB|vDFF:vdff|Q[4]                ; 3.062             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[1]  ; datapath:DP|register:regB|vDFF:vdff|Q[1]                ; 3.046             ;
+; datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff|Q[1]  ; datapath:DP|register:regB|vDFF:vdff|Q[1]                ; 3.046             ;
+; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[1]  ; datapath:DP|register:regB|vDFF:vdff|Q[1]                ; 3.046             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[11] ; datapath:DP|register:regA|vDFF:vdff|Q[11]               ; 3.041             ;
+; datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff|Q[11] ; datapath:DP|register:regA|vDFF:vdff|Q[11]               ; 3.041             ;
+; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[11] ; datapath:DP|register:regA|vDFF:vdff|Q[11]               ; 3.041             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[10] ; datapath:DP|register:regA|vDFF:vdff|Q[10]               ; 3.032             ;
+; datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff|Q[10] ; datapath:DP|register:regA|vDFF:vdff|Q[10]               ; 3.032             ;
+; datapath:DP|register:regC|vDFF:vdff|Q[11]               ; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[11] ; 3.032             ;
+; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[10] ; datapath:DP|register:regA|vDFF:vdff|Q[10]               ; 3.032             ;
+; datapath:DP|register:regC|vDFF:vdff|Q[1]                ; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[1]  ; 3.008             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[3]  ; datapath:DP|register:regB|vDFF:vdff|Q[3]                ; 3.005             ;
+; datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff|Q[3]  ; datapath:DP|register:regB|vDFF:vdff|Q[3]                ; 3.005             ;
+; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[3]  ; datapath:DP|register:regB|vDFF:vdff|Q[3]                ; 3.005             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[2]  ; datapath:DP|register:regB|vDFF:vdff|Q[2]                ; 3.001             ;
+; datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff|Q[2]  ; datapath:DP|register:regB|vDFF:vdff|Q[2]                ; 3.001             ;
+; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[2]  ; datapath:DP|register:regB|vDFF:vdff|Q[2]                ; 3.001             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[9]  ; datapath:DP|register:regA|vDFF:vdff|Q[9]                ; 2.994             ;
+; datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff|Q[9]  ; datapath:DP|register:regA|vDFF:vdff|Q[9]                ; 2.994             ;
+; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[9]  ; datapath:DP|register:regA|vDFF:vdff|Q[9]                ; 2.994             ;
+; datapath:DP|register:regC|vDFF:vdff|Q[2]                ; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[2]  ; 2.984             ;
+; datapath:DP|register:regC|vDFF:vdff|Q[9]                ; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[9]  ; 2.951             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[0]  ; datapath:DP|register:regA|vDFF:vdff|Q[0]                ; 2.933             ;
+; datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff|Q[0]  ; datapath:DP|register:regA|vDFF:vdff|Q[0]                ; 2.933             ;
+; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[0]  ; datapath:DP|register:regA|vDFF:vdff|Q[0]                ; 2.933             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[7]  ; datapath:DP|register:regB|vDFF:vdff|Q[7]                ; 2.904             ;
+; datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff|Q[7]  ; datapath:DP|register:regB|vDFF:vdff|Q[7]                ; 2.904             ;
+; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[7]  ; datapath:DP|register:regB|vDFF:vdff|Q[7]                ; 2.904             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[15] ; datapath:DP|register:regB|vDFF:vdff|Q[15]               ; 2.900             ;
+; datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff|Q[15] ; datapath:DP|register:regB|vDFF:vdff|Q[15]               ; 2.900             ;
+; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[15] ; datapath:DP|register:regB|vDFF:vdff|Q[15]               ; 2.900             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[12] ; datapath:DP|register:regA|vDFF:vdff|Q[12]               ; 2.897             ;
+; datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff|Q[12] ; datapath:DP|register:regA|vDFF:vdff|Q[12]               ; 2.897             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[13] ; datapath:DP|register:regA|vDFF:vdff|Q[13]               ; 2.897             ;
+; datapath:DP|regfile:REGFILE|register:r6|vDFF:vdff|Q[13] ; datapath:DP|register:regA|vDFF:vdff|Q[13]               ; 2.897             ;
+; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[13] ; datapath:DP|register:regA|vDFF:vdff|Q[13]               ; 2.897             ;
+; datapath:DP|regfile:REGFILE|register:r4|vDFF:vdff|Q[12] ; datapath:DP|register:regA|vDFF:vdff|Q[12]               ; 2.897             ;
+; datapath:DP|register:regC|vDFF:vdff|Q[0]                ; datapath:DP|regfile:REGFILE|register:r0|vDFF:vdff|Q[0]  ; 2.888             ;
+; datapath:DP|regfile:REGFILE|register:r5|vDFF:vdff|Q[14] ; datapath:DP|register:regA|vDFF:vdff|Q[14]               ; 2.873             ;
++---------------------------------------------------------+---------------------------------------------------------+-------------------+
 Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
 
 
@@ -2499,33 +2499,33 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_SYNC_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:43
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:24
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:18
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:11
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:06
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 17% of the available device resources in the region that extends from location X78_Y0 to location X89_Y10
 Info (188005): Design requires adding a large amount of routing delay for some signals to meet hold time requirements, and there is an excessive demand for the available routing resources. The Fitter is reducing the routing delays of some signals to help the routing algorithm converge, but doing so may cause hold time failures. For more information, refer to the "Estimated Delay Added for Hold Timing" section in the Fitter report.
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:02:55
-Info (11888): Total time spent on timing analysis during the Fitter is 2.66 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:01:51
+Info (11888): Total time spent on timing analysis during the Fitter is 1.49 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:16
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:09
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file D:/CPEN211/lab5/output_files/lab5_top.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 199 warnings
-    Info: Peak virtual memory: 6226 megabytes
-    Info: Processing ended: Fri Nov 19 17:02:18 2021
-    Info: Elapsed time: 00:05:36
-    Info: Total CPU time (on all processors): 00:05:53
+    Info: Peak virtual memory: 6254 megabytes
+    Info: Processing ended: Sat Nov 20 00:05:09 2021
+    Info: Elapsed time: 00:03:30
+    Info: Total CPU time (on all processors): 00:04:16
 
 
 +----------------------------+

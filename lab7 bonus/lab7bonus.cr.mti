@@ -1,0 +1,67 @@
+{D:/CPEN211/lab7 bonus/alu.v} {1 {vlog -work work -stats=none {D:/CPEN211/lab7 bonus/alu.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {D:/CPEN211/lab7 bonus/regfile.v} {1 {vlog -work work -stats=none {D:/CPEN211/lab7 bonus/regfile.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module regfile
+-- Compiling module Dec
+-- Compiling module RLE
+-- Compiling module Mux8
+-- Compiling module Mux3
+
+Top level modules:
+	regfile
+	Mux3
+
+} {} {}} {D:/CPEN211/lab7 bonus/datapath.v} {1 {vlog -work work -stats=none {D:/CPEN211/lab7 bonus/datapath.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module datapath
+-- Compiling module Mux4
+-- Compiling module Mux2
+
+Top level modules:
+	datapath
+
+} {} {}} {D:/CPEN211/lab7 bonus/lab7bonus_top.v} {1 {vlog -work work -stats=none {D:/CPEN211/lab7 bonus/lab7bonus_top.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab7bonus_top
+-- Compiling module RAM
+-- Compiling module sseg
+
+Top level modules:
+	lab7bonus_top
+	sseg
+
+} {} {}} {D:/CPEN211/lab7 bonus/lab7bonus_top_tb.v} {1 {vlog -work work -stats=none {D:/CPEN211/lab7 bonus/lab7bonus_top_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab7bonus_check_tb
+-- Compiling module lab8_stage2_tb
+-- Compiling module lab8_mytest_tb
+
+Top level modules:
+	lab7bonus_check_tb
+	lab8_stage2_tb
+	lab8_mytest_tb
+
+} {} {}} {D:/CPEN211/lab7 bonus/cpu.v} {1 {vlog -work work -stats=none {D:/CPEN211/lab7 bonus/cpu.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cpu
+-- Compiling module instruction_register
+-- Compiling module fsm
+-- Compiling module instruction_decoder
+
+Top level modules:
+	cpu
+
+} {} {}} {D:/CPEN211/lab7 bonus/shifter.v} {1 {vlog -work work -stats=none {D:/CPEN211/lab7 bonus/shifter.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shifter
+
+Top level modules:
+	shifter
+
+} {} {}}

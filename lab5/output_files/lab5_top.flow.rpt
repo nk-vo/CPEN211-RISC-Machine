@@ -1,5 +1,5 @@
 Flow report for lab5_top
-Fri Nov 19 17:03:08 2021
+Sat Nov 20 00:05:45 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Nov 19 17:02:44 2021       ;
+; Flow Status                     ; Successful - Sat Nov 20 00:05:29 2021       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; lab5_top                                    ;
 ; Top-level Entity Name           ; lab5_top                                    ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/19/2021 16:56:06 ;
+; Start date & time ; 11/20/2021 00:01:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab5_top            ;
 +-------------------+---------------------+
@@ -78,12 +78,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 220295152020648.163736976517344        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 220295152020648.163739527115724        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
@@ -93,11 +95,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:36     ; 1.0                     ; 4810 MB             ; 00:00:59                           ;
-; Fitter               ; 00:05:35     ; 1.0                     ; 6226 MB             ; 00:05:51                           ;
-; Assembler            ; 00:00:24     ; 1.0                     ; 4830 MB             ; 00:00:20                           ;
-; Timing Analyzer      ; 00:00:22     ; 1.1                     ; 5110 MB             ; 00:00:20                           ;
-; Total                ; 00:06:57     ; --                      ; --                  ; 00:07:30                           ;
+; Analysis & Synthesis ; 00:00:26     ; 1.0                     ; 4803 MB             ; 00:00:51                           ;
+; Fitter               ; 00:03:28     ; 1.0                     ; 6254 MB             ; 00:04:15                           ;
+; Assembler            ; 00:00:18     ; 1.0                     ; 4827 MB             ; 00:00:13                           ;
+; Timing Analyzer      ; 00:00:14     ; 1.1                     ; 5113 MB             ; 00:00:14                           ;
+; Total                ; 00:04:26     ; --                      ; --                  ; 00:05:33                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

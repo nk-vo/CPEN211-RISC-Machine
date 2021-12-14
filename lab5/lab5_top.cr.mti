@@ -1,9 +1,9 @@
-D:/CPEN211/lab5/alu_tb.v {1 {vlog -work work -stats=none D:/CPEN211/lab5/alu_tb.v
+D:/CPEN211/lab5/datapath.v {1 {vlog -work work -stats=none D:/CPEN211/lab5/datapath.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module ALU_tb
+-- Compiling module datapath
 
 Top level modules:
-	ALU_tb
+	datapath
 
 } {} {}} D:/CPEN211/lab5/regfile_tb.v {1 {vlog -work work -stats=none D:/CPEN211/lab5/regfile_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -12,12 +12,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	regfile_tb
 
-} {} {}} D:/CPEN211/lab5/datapath.v {1 {vlog -work work -stats=none D:/CPEN211/lab5/datapath.v
+} {} {}} D:/CPEN211/lab5/alu_tb.v {1 {vlog -work work -stats=none D:/CPEN211/lab5/alu_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module datapath
+-- Compiling module ALU_tb
 
 Top level modules:
-	datapath
+	ALU_tb
 
 } {} {}} D:/CPEN211/lab5/datapath_tb.v {1 {vlog -work work -stats=none D:/CPEN211/lab5/datapath_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -33,26 +33,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	shifter
 
-} {} {}} D:/CPEN211/lab5/alu.v {1 {vlog -work work -stats=none D:/CPEN211/lab5/alu.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module ALU
-
-Top level modules:
-	ALU
-
-} {} {}} D:/CPEN211/lab5/lab5_autograder_check.v {1 {vlog -work work -stats=none D:/CPEN211/lab5/lab5_autograder_check.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module lab5_check_1
--- Compiling module lab5_check_2
--- Compiling module lab5_check_3
--- Compiling module lab5_check_4
-
-Top level modules:
-	lab5_check_1
-	lab5_check_2
-	lab5_check_3
-	lab5_check_4
-
 } {} {}} D:/CPEN211/lab5/lab5_top.v {1 {vlog -work work -stats=none D:/CPEN211/lab5/lab5_top.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module lab5_top
@@ -67,7 +47,6 @@ Top level modules:
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module regfile
 -- Compiling module dec
--- Compiling module vDFF
 -- Compiling module register
 
 Top level modules:
@@ -79,5 +58,25 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	shifter_tb
+
+} {} {}} D:/CPEN211/lab5/lab5_autograder_check.v {1 {vlog -work work -stats=none D:/CPEN211/lab5/lab5_autograder_check.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab5_check_1
+-- Compiling module lab5_check_2
+-- Compiling module lab5_check_3
+-- Compiling module lab5_check_4
+
+Top level modules:
+	lab5_check_1
+	lab5_check_2
+	lab5_check_3
+	lab5_check_4
+
+} {} {}} D:/CPEN211/lab5/alu.v {1 {vlog -work work -stats=none D:/CPEN211/lab5/alu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALU
+
+Top level modules:
+	ALU
 
 } {} {}}
