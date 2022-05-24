@@ -21,3 +21,11 @@ cov*/
 transcript*
 sc_dpiheader.h
 vsim.dbg
+
+# ignore quartus build
+db/
+incremental_db/
+output_files/
+
+# ignore vscode settings
+.vscode/

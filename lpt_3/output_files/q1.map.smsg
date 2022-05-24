@@ -1,8 +1,0 @@
-Warning (10273): Verilog HDL warning at q1.v(18): extended using "x" or "z" File: D:/CPEN211/lpt_3/q1.v Line: 18
-Warning (10273): Verilog HDL warning at q1.v(38): extended using "x" or "z" File: D:/CPEN211/lpt_3/q1.v Line: 38
-Info (10281): Verilog HDL Declaration information at q1.v(8): object "R0" differs only in case from object "r0" in the same scope File: D:/CPEN211/lpt_3/q1.v Line: 8
-Info (10281): Verilog HDL Declaration information at q1.v(8): object "R1" differs only in case from object "r1" in the same scope File: D:/CPEN211/lpt_3/q1.v Line: 8
-Info (10281): Verilog HDL Declaration information at q1.v(8): object "R2" differs only in case from object "r2" in the same scope File: D:/CPEN211/lpt_3/q1.v Line: 8
-Info (10281): Verilog HDL Declaration information at q1.v(8): object "R3" differs only in case from object "r3" in the same scope File: D:/CPEN211/lpt_3/q1.v Line: 8
-Info (10281): Verilog HDL Declaration information at q1.v(5): object "tsel" differs only in case from object "Tsel" in the same scope File: D:/CPEN211/lpt_3/q1.v Line: 5
-Info (10281): Verilog HDL Declaration information at q1.v(10): object "tout" differs only in case from object "Tout" in the same scope File: D:/CPEN211/lpt_3/q1.v Line: 10
