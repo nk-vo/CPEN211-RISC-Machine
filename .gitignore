@@ -11,6 +11,45 @@
 *.jpg
 *.html
 *.bsf
+# ignore ModelSim generated files and directories (temp files and so on)
+[_@]*
+
+# ignore compilation output of ModelSim
+*.mti
+*.dat
+*.dbs
+*.psm
+*.bak
+*.cmp
+*.jpg
+*.html
+*.bsf
+*.qip
+*.cdf
+*.qws
+*.qpf
+*.qsf
+*.mpf
+
+
+# ignore simulation output of ModelSim
+wlf*
+*.wlf
+*.vstf
+*.ucdb
+cov*/
+transcript*
+sc_dpiheader.h
+vsim.dbg
+
+# ignore quartus build
+db/
+incremental_db/
+output_files/
+greybox_tmp/
+
+# ignore vscode settings
+.vscode/
 
 # ignore simulation output of ModelSim
 wlf*
